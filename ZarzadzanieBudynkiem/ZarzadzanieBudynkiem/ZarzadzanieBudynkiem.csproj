@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC6F4C8A-4676-4908-AC23-CFF6650662B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZarzadzanieBudynkiem</RootNamespace>
+    <AssemblyName>ZarzadzanieBudynkiem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CBiuro.cs" />
+    <Compile Include="CEkranListyWolnychMiejsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranListyWolnychMiejsc.Designer.cs">
+      <DependentUpon>CEkranListyWolnychMiejsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranMiejscParkingowych.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranMiejscParkingowych.Designer.cs">
+      <DependentUpon>CEkranMiejscParkingowych.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranSzczegolyLicznika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranSzczegolyLicznika.Designer.cs">
+      <DependentUpon>CEkranSzczegolyLicznika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranSzczegolyPomieszczenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranSzczegolyPomieszczenia.Designer.cs">
+      <DependentUpon>CEkranSzczegolyPomieszczenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranMenuGlowne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranMenuGlowne.Designer.cs">
+      <DependentUpon>CEkranMenuGlowne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranTablicRejestracyjnych.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranTablicRejestracyjnych.Designer.cs">
+      <DependentUpon>CEkranTablicRejestracyjnych.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranZarzadzaniaKlimatem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranZarzadzaniaKlimatem.Designer.cs">
+      <DependentUpon>CEkranZarzadzaniaKlimatem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranLogowania.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranLogowania.Designer.cs">
+      <DependentUpon>CEkranLogowania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranZarzadzaniaTablicamiRejestracyjnymi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranZarzadzaniaTablicamiRejestracyjnymi.Designer.cs">
+      <DependentUpon>CEkranZarzadzaniaTablicamiRejestracyjnymi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEkranZarzadzaniaWybranymiRoletami.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEkranZarzadzaniaWybranymiRoletami.Designer.cs">
+      <DependentUpon>CEkranZarzadzaniaWybranymiRoletami.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CLicznik.cs" />
+    <Compile Include="CMiejsceParkingoweBiurowe.cs" />
+    <Compile Include="CParkingBiura.cs" />
+    <Compile Include="CPomieszczenie.cs" />
+    <Compile Include="CPracownik.cs" />
+    <Compile Include="CPracownikAdministracyjny.cs" />
+    <Compile Include="CRolety.cs" />
+    <Compile Include="CSterownik.cs" />
+    <Compile Include="CTablicaRejestracyjna.cs" />
+    <Compile Include="CZuzycieDnia.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CEkranListyWolnychMiejsc.resx">
+      <DependentUpon>CEkranListyWolnychMiejsc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranMenuGlowne.resx">
+      <DependentUpon>CEkranMenuGlowne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranMiejscParkingowych.resx">
+      <DependentUpon>CEkranMiejscParkingowych.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranSzczegolyLicznika.resx">
+      <DependentUpon>CEkranSzczegolyLicznika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranSzczegolyPomieszczenia.resx">
+      <DependentUpon>CEkranSzczegolyPomieszczenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranTablicRejestracyjnych.resx">
+      <DependentUpon>CEkranTablicRejestracyjnych.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranZarzadzaniaKlimatem.resx">
+      <DependentUpon>CEkranZarzadzaniaKlimatem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranLogowania.resx">
+      <DependentUpon>CEkranLogowania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranZarzadzaniaTablicamiRejestracyjnymi.resx">
+      <DependentUpon>CEkranZarzadzaniaTablicamiRejestracyjnymi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEkranZarzadzaniaWybranymiRoletami.resx">
+      <DependentUpon>CEkranZarzadzaniaWybranymiRoletami.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
